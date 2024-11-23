@@ -1,0 +1,11 @@
+{
+	"Name": "[Si] Emily's Magic Hat",
+	"Author": "SiTheGreat",
+	"Description": "Get Emily's Magic Hat without having to romance her.",
+	"Version": "1.0.0",
+	"UniqueID": "Si.EMH",
+	"UpdateKeys": [ "Nexus:" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+}

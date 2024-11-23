@@ -1,0 +1,49 @@
+{
+
+	"Format": "2.0.0",
+
+	// Config //////////////////////////////////////////////////////////
+
+	"ConfigSchema":{
+
+		"GoldWalnuts": {
+			"Default": 130,
+			"Description": "The number of Golden Walnuts you need to collect to receive the hat."
+		},
+
+	},
+
+	// Content //////////////////////////////////////////////////////////
+
+	"Changes": [
+
+	// Send Hat //////////////////////////////////////////////////////////
+
+	{
+	"Action": "EditData",
+	"Target": "Data/TriggerActions",
+	"Entries": {
+		"{{ModId}}_Hat": {
+			"Id": "{{ModId}}_Hat",
+			"Trigger": "DayEnding",
+			"Condition": "WORLD_STATE_FIELD GoldenWalnuts {{GoldWalnuts}}",
+			"Actions": [
+				"AddMail Current {{ModId}}_Letter",
+			]
+		}
+	}
+	},
+
+	{
+	"Action": "EditData",
+	"Target": "Data/mail",
+	"Entries": {
+		"{{ModId}}_Letter": "Hi @!^^I just wanted to thank you for fixing Willy's boat so everyone can visit Ginger Island. I love going there! I made you this hat. I hope it fits!^^With lots of love,^^Emily %item object (H)41 1 %%[#]Emily's Magic Hat",
+	},
+	},
+
+	// End //////////////////////////////////////////////////////////
+
+	]
+
+}
