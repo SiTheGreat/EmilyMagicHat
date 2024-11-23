@@ -38,7 +38,7 @@
 	"Action": "EditData",
 	"Target": "Data/mail",
 	"Entries": {
-		"{{ModId}}_Letter": "Hi @!^^I just wanted to thank you for fixing Willy's boat so everyone can visit Ginger Island. I love going there! I made you this hat. I hope it fits!^^With lots of love,^^Emily %item object (H)41 1 %%[#]Emily's Magic Hat",
+		"{{ModId}}_Letter": "Hi @!^^I just wanted to thank you for fixing Willy's boat so everyone can visit Ginger Island. I love going there! I made you this hat. I hope it fits!^^With lots of love,^Emily %item object (H)41 1 %%[#]Emily's Magic Hat",
 	},
 	},
 
