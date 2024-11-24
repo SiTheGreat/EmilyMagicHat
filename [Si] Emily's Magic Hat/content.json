@@ -26,7 +26,7 @@
 		"{{ModId}}_Hat": {
 			"Id": "{{ModId}}_Hat",
 			"Trigger": "DayEnding",
-			"Condition": "WORLD_STATE_FIELD GoldenWalnuts {{GoldWalnuts}}",
+			"Condition": "WORLD_STATE_FIELD GoldenWalnutsFound {{GoldWalnuts}}",
 			"Actions": [
 				"AddMail Current {{ModId}}_Letter",
 			]
